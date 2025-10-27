@@ -1,0 +1,29 @@
+1.C) AIM : Write a JavaScript program to implement the event listeners.
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Event Listener Example</title>
+</head>
+<body>
+
+  <h2>Event Listener Demo</h2>
+
+  <button id="btn1">Click Me</button>
+  <button id="btn2">Change Color</button>
+  <p id="message">Watch this text change!</p>
+
+  <script>
+    // Event listener for button click
+    document.getElementById("btn1").addEventListener("click", function() {
+      alert("Button 1 was clicked!");
+    });
+
+    // Event listener to change text color
+    document.getElementById("btn2").addEventListener("click", function() {
+      document.getElementById("message").style.color = "red";
+      document.getElementById("message").textContent = "The text color is now red!";
+    });
+  </script>
+
+</body>
+</html>
