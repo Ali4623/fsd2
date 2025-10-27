@@ -1,0 +1,28 @@
+1.d) AIM: Write a JavaScript program to handle the click events for the HTML button elements.
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Click Event Example</title>
+</head>
+<body>
+
+  <h2>Click Event Handling</h2>
+
+  <button id="greetBtn">Greet</button>
+  <button id="changeTextBtn">Change Text</button>
+  <p id="output">This is the original text.</p>
+
+  <script>
+    // Handle click using onclick
+    document.getElementById("greetBtn").onclick = function() {
+      alert("Hello! You clicked the Greet button.");
+    };
+
+    // Handle click using addEventListener
+    document.getElementById("changeTextBtn").addEventListener("click", function() {
+      document.getElementById("output").textContent = "The text has been changed!";
+    });
+  </script>
+
+</body>
+</html>
