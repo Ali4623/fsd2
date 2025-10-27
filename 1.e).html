@@ -1,0 +1,32 @@
+1.e) AIM :  Write a JavaScript program to With three types of functions
+i.	Function declaration 
+ii.	Function definition
+iii.	Arrow functions
+
+// 1. Function Declaration
+function greet(name) {
+    return "Hello, " + name + "! (From Function Declaration)";
+}
+
+// 2. Function Definition (Function Expression)
+const multiply = function(a, b) {
+    return a * b;
+};
+
+// 3. Arrow Function
+const divide = (a, b) => {
+    if (b === 0) {
+        return "Cannot divide by zero!";
+    }
+    return a / b;
+};
+
+// Call the functions
+
+let greeting = greet("Alice");
+console.log(greeting);
+
+let product = multiply(6, 3);
+console.log("Product is: " + product + " (From Function Expression)");
+let result = divide(12, 4);
+console.log("Result of division: " + result + " (From Arrow Function)");
